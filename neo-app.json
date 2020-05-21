@@ -1,0 +1,47 @@
+{
+	"welcomeFile": "/index.html",
+	"authenticationMethod": "saml",
+	"headerWhiteList": ["X-Authorization","accessToken"],
+	"routes": [{
+		"path": "/resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"entryPath": "/resources"
+		},
+		"description": "SAPUI5 Resources"
+	},{
+		"path": "/test-resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"entryPath": "/test-resources"
+		},
+		"description": "SAPUI5 Test Resources"
+	},{
+		"path": "/myprofile2api_basic",
+		"target": {
+			"type": "destination",
+			"name": "myprofile2api_basic"
+		
+		},
+		"description": "Profile Destination"
+	},{
+		"path": "/myprofile2storelocator_noauth",
+		"target": {
+			"type": "destination",
+			"name": "myprofile2storelocator_noauth"
+		
+		},
+		"description": "storelocatorservice Destination"
+	},{
+		"path": "/myprofile2address_basic",
+		"target": {
+			"type": "destination",
+			"name": "myprofile2address_basic"
+		
+		},
+		"description": "addressservice Destination"
+	}
+  ]
+}
