@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="WOW" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title ng-bind="'WOW &mdash; ' + title">Woolworths Group:</title>
+  <meta name="description" content="Woolworths Group is made up of some of the most recognisable and trusted brands in retailing, serving millions of customers every day with great choice, low prices and excellent quality.">
+
+  <!-- Social sharing aid -->
+  <meta property="twitter:card" content="summary">
+  <meta property="og:title" content="Woolworths Group: Quality Brands and Trusted Retailing" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.woolworthsgroup.com.au" />
+  <meta property="og:image" content="https://www.woolworthsgroup.com.au/img/logo.png" />
+  <meta property="og:description" content="Woolworths Group is made up of some of the most recognisable and trusted brands in retailing, serving millions of customers every day with great choice, low prices and excellent quality." />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/_assets/_global/media/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/_assets/_global/media/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/_assets/_global/media/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/_assets/_global/media/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/_assets/_global/media/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/_assets/_global/media/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/_assets/_global/media/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/_assets/_global/media/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/_assets/_global/media/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/_assets/_global/media/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/_assets/_global/media/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/_assets/_global/media/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/_assets/_global/media/favicon/favicon-16x16.png">
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/angular-loading-bar/build/loading-bar.css">
+  <!-- endinject -->
+  <link rel="stylesheet" href="/_assets/_global/css/styles.css">
+   <!-- old code 
+  <script src="https://maps.googleapis.com/maps/api/js?client=gme-woolworthsinternational"></script> -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43643206-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments) };
+    gtag('js', new Date());
+    gtag('config', 'UA-43643206-1', {
+      'linker': { 'domains': ['https://www.wowcareers.com.au'] }
+    });
+  </script>
+  
+
+</head>
+
+<body class="page-progress__body-pad mainpagewrapper {{brandName}}">
+  <app-header></app-header>
+  <ui-view autoscroll="false"></ui-view>
+  <div ng-include="'views/chatbot.html'" ng-include-replace></div>
+  <div ng-include="'views/footer.html'" ng-include-replace></div>
+  <!-- bower:js -->
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="/bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="/bower_components/angular-resource/angular-resource.js"></script>
+  <script src="/bower_components/angular-route/angular-route.js"></script>
+  <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="/bower_components/angular-touch/angular-touch.js"></script>
+  <script src="/bower_components/angular-loading-bar/build/loading-bar.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="/bower_components/ng-idle/angular-idle.js"></script>
+  <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="/bower_components/angular-recaptcha/release/angular-recaptcha.js"></script>
+  <!-- endinject -->
+  <script src="/_assets/_global/js/scripts.min.js"></script>
+</body>
+
+</html>
